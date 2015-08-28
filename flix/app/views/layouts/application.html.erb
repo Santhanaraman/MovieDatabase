@@ -12,6 +12,16 @@
 
 <div id="wrapper">
 
+  <% if flash[:notice] %>
+    <p class="flash notice">
+      <%= flash[:notice] %>
+    </p>
+  <% end %>
+
+  <div id="container">
+
+<div id="wrapper">
+
   <div id="container">
     <section id="sidebar">
       <%= render "layouts/sidebar" %>
@@ -23,6 +33,8 @@
 
 </div>
 
+</div>
+</div>
 <%= render "layouts/footer" %>
 
 </body>
