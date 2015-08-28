@@ -186,3 +186,85 @@ Processing by MoviesController#index as HTML
   Rendered layouts/_sidebar.html.erb (0.1ms)
   Rendered layouts/_footer.html.erb (0.1ms)
 Completed 200 OK in 40ms (Views: 38.7ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "movies" ("cast", "created_at", "description", "director", "duration", "image_file_name", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cast", " Robert Downey Jr., Chris Evans, Scarlett Johansson"], ["created_at", "2015-08-28 17:22:14.523601"], ["description", "Earth's mightiest heroes must come together and learn to fight as a team if they are to stop the mischievous Loki and his alien army from enslaving humanity."], ["director", "Joss Whedon"], ["duration", "143 minutes"], ["image_file_name", "avengers.jpg"], ["rating", "PG-13"], ["released_on", "2012-04-11"], ["title", "The Avengers"], ["total_gross", 1520000000.0], ["updated_at", "2015-08-28 17:22:14.523601"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/movies" for 127.0.0.1 at 2015-08-28 10:22:37 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"  WHERE (released_on <= '2015-08-28 17:22:37.353795')  ORDER BY released_on desc
+  Rendered movies/index.html.erb within layouts/application (35.3ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 132ms (Views: 120.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-28 10:22:37 -0700
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2015-08-28 10:22:37 -0700
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2015-08-28 10:22:37 -0700
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2015-08-28 10:22:37 -0700
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2015-08-28 10:22:37 -0700
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2015-08-28 10:22:37 -0700
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2015-08-28 10:22:37 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-28 10:22:37 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-28 10:22:37 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-28 10:22:37 -0700
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2015-08-28 10:22:37 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-28 10:22:37 -0700
+
+
+Started GET "/assets/avengers.jpg" for 127.0.0.1 at 2015-08-28 10:22:37 -0700
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2015-08-28 10:22:37 -0700
+
+
+Started GET "/assets/catwoman.jpg" for 127.0.0.1 at 2015-08-28 10:22:37 -0700
+
+
+Started GET "/assets/superman.jpg" for 127.0.0.1 at 2015-08-28 10:22:37 -0700
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2015-08-28 10:22:37 -0700
+
+
+Started GET "/assets/batman.jpg" for 127.0.0.1 at 2015-08-28 10:22:37 -0700
+
+
+Started GET "/assets/background.jpg" for 127.0.0.1 at 2015-08-28 10:22:37 -0700
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-08-28 10:22:37 -0700
+
+
+Started GET "/assets/arrow.png" for 127.0.0.1 at 2015-08-28 10:22:37 -0700
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2015-08-28 10:22:37 -0700
